@@ -6,6 +6,6 @@ public class Styles {
 	public final static int CS_HEADER = 1;
 	public final static int CS_RESULT = 2;
 	
-	private Styles() {}
+	protected Styles() {}
 	 
 }
