@@ -37,11 +37,13 @@ public abstract class ReportCell<T> {
 		
 		public ReportCell() {
 			super();
+			this.value = this.getDefaultValue();
 		}
 		
 		public ReportCell(int cellStyle) {
 			super();
 			this.cellStyle = cellStyle;
+			this.value = this.getDefaultValue();
 		}
 
 		public abstract void addToValue(Number value[]);
