@@ -28,4 +28,12 @@ public class ReportCellString extends ReportCell<String> {
 		return DEFAULT_VALUE;
 	}
 
+	public ReportCellString() {
+		super();
+	}
+
+	public ReportCellString(int cellStyle) {
+		super(cellStyle);
+	}
+
 }

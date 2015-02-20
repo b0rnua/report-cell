@@ -20,22 +20,17 @@ public class ReportCellDate extends ReportCell<Date> {
 		
 	}
 
-	public ReportCellDate() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public ReportCellDate(int cellStyle) {
-		super(cellStyle);
-		// TODO Auto-generated constructor stub
-	}
-
 	@Override
 	public Date getDefaultValue() {
 		return DEFAULT_VALUE;
 	}
-	
-	
-	
+
+	public ReportCellDate() {
+		super();
+	}
+
+	public ReportCellDate(int cellStyle) {
+		super(cellStyle);
+	}
 		
 }

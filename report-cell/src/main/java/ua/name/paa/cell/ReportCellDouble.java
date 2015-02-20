@@ -34,5 +34,13 @@ public class ReportCellDouble extends ReportCell<Double> {
 	public Double getDefaultValue() {
 		return DEFAULT_VALUE;
 	}
+
+	public ReportCellDouble() {
+		super();
+	}
+
+	public ReportCellDouble(int cellStyle) {
+		super(cellStyle);
+	}
 	
 }

@@ -16,7 +16,7 @@ public class ReportCellTest {
 		ReportCell<?> except = new ReportCellString(Styles.CS_DATA, "");
 		ReportCell<?> result = new ReportCellString(Styles.CS_DATA, null);
 		
-		ReportCell<?> except2 = new ReportCellDouble(Styles.CS_DATA, 0.);
+		ReportCell<?> except2 = new ReportCellDouble(Styles.CS_DATA);
 		ReportCell<?> result2 = new ReportCellDouble(Styles.CS_DATA, null);
 		
 		assertEquals(except.getValue(), result.getValue());

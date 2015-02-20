@@ -32,5 +32,13 @@ public class ReportCellInteger extends ReportCell<Integer> {
 	public Integer getDefaultValue() {
 		return DEFAULT_VALUE;
 	}
-		
+
+	public ReportCellInteger() {
+		super();
+	}
+
+	public ReportCellInteger(int cellStyle) {
+		super(cellStyle);
+	}
+			
 }
