@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class ReportCellDate extends ReportCell<Date> {
 
-	private static final Date DEFAULT_VALUE = new Date();
+	private static final Date DEFAULT_VALUE = new Date(600505200000L);
 	
 	public ReportCellDate(int cellStyle, Date value) {
 		super(cellStyle, value);
