@@ -49,10 +49,14 @@ public abstract class ReportCell<T> {
 		public abstract void addToValue(Number value[]);
 		
 		private static ReportCell<?> verifyReportCell(ReportCell<?> targetCell, ReportCell<?> instanceType) {
-			if (targetCell == null) {
-				targetCell = instanceType; 
-			} else if (targetCell.getTClass() != instanceType.getTClass()) {
-				targetCell = instanceType;
+			if (instanceType != null) {
+				if (targetCell == null) {
+					targetCell = instanceType; 
+				} else if (targetCell.getTClass() != instanceType.getTClass()) {
+					targetCell = instanceType;
+				} else {
+					targetCell.setStyle(instanceType.getCellStyle());
+				}
 			}
 			return targetCell;
 		}
